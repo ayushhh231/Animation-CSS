@@ -1,0 +1,81 @@
+.cloud-container{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+.sun1{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 60px;
+    margin-left: 100px;
+    position: absolute;
+    animation: sun 20s infinite;
+}
+.cloud1{
+    height: 70px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 30px;
+    margin-left: 60px;
+    position: absolute;
+    animation: cloud 27s infinite;
+    text-align: center;
+}
+.cloud2{
+    height: 70px;
+    width: 100px;
+    background-color: rgb(100, 146, 146);
+    border-radius: 100px;
+    margin-left: 300px;
+    position: absolute;
+    animation: cloud-2 25s infinite;
+    text-align: center;
+    
+}
+.cloud3{
+    height: 70px;
+    width: 100px;
+    background-color: rgb(83, 87, 87);
+    border-radius: 100px;
+    margin-right: 100px;
+    position: absolute;
+    animation: cloud-3 20s infinite;
+    text-align: center;
+}
+@keyframes sun{
+   from{
+        left: -8.5%;
+   }
+   to{
+    left: 91.5%;
+   }
+}
+@keyframes cloud{
+    from{
+        left: -5%;
+    }
+    to{
+        left: 95%;
+    }
+}
+@keyframes cloud-2 {
+    from{
+        left: 70%;
+    }
+    to{
+        left: -30%;
+    }
+    
+}
+@keyframes cloud-3{
+    from{
+        left: 93%;
+    }
+    to{
+        left: -8%;
+    }
+}
